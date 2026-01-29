@@ -5,6 +5,6 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Check php modules
-        run: |
-          php -m
+      - uses: actions/checkout@v4
+      - name: List files in repo
+        run: ls -la
